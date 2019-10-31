@@ -1,0 +1,15 @@
+{
+    "type": "record",
+    "name": "FashionData",
+    "namespace": "dalelane",
+    "fields": [
+        {
+            "name": "ImageData",
+            "type": "bytes"
+        },
+        {
+            "name": "Label",
+            "type": "int"
+        }
+    ]
+}
