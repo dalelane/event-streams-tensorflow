@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+ STEP 3:
+ Using a Kafka topic as a source of test data
+------------------------------------------------------------------
+>> Getting the config from config.env
+>> Train a machine learning model and test using test data from Kafka
+-->>> Train a machine learning model using training data from Kafka
+Train for 1000 steps
+Epoch 1/4
+1000/1000 [==============================] - 9s 9ms/step - loss: 1.0777 - accuracy: 0.6270
+Epoch 2/4
+1000/1000 [==============================] - 6s 6ms/step - loss: 0.7637 - accuracy: 0.7380
+Epoch 3/4
+1000/1000 [==============================] - 6s 6ms/step - loss: 0.6307 - accuracy: 0.7700
+Epoch 4/4
+1000/1000 [==============================] - 5s 5ms/step - loss: 0.6382 - accuracy: 0.7660
+-->>> Prepare a test dataset using test data from Kafka
+-->>> Evaluate the machine learning model using test data from Kafka
+4000/4000 [==============================] - 21s 5ms/step - loss: 0.5950 - accuracy: 0.7857

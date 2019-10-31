@@ -1,0 +1,82 @@
+------------------------------------------------------------------
+ STEP 4:
+ Using an ML model to make predictions about a stream of Kafka events
+------------------------------------------------------------------
+>> Getting the config from config.env
+>> Re-creating the topic for the stream of events to classify
+Topic FASHION.MNIST.TEST.STREAM deleted successfully
+OK
+Created topic FASHION.MNIST.TEST.STREAM
+OK
+>> Train a machine learning model and test using the stream of events from Kafka
+-->>> Train a machine learning model using training data from Kafka
+Train for 1000 steps
+Epoch 1/4
+1000/1000 [==============================] - 9s 9ms/step - loss: 1.0679 - accuracy: 0.6310
+Epoch 2/4
+1000/1000 [==============================] - 6s 6ms/step - loss: 0.7695 - accuracy: 0.7140
+Epoch 3/4
+1000/1000 [==============================] - 6s 6ms/step - loss: 0.6279 - accuracy: 0.7640
+Epoch 4/4
+1000/1000 [==============================] - 6s 6ms/step - loss: 0.6405 - accuracy: 0.7560
+-->>> Prepare a streaming dataset based on a Kafka topic
+-->>> Start classifying events received on the topic FASHION.MNIST.TEST.STREAM
+>> Start simulating a stream of events
+-->>> Get the schema to use to represent fashion MNIST data
+-->>> Create a Kafka producer
+-->>> Download the test data to be used
+-->>> Starting to create test events to FASHION.MNIST.TEST.STREAM every second
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✓ Event classified correctly
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✓ Event classified correctly
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✓ Event classified correctly
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✘ Event INCORRECTLY classified
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly
+---->>>> ✓ Event classified correctly

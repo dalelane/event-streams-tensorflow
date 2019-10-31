@@ -1,0 +1,28 @@
+------------------------------------------------------------------
+ STEP 0:
+ Preparing Kafka topics with data for an machine learning project 
+------------------------------------------------------------------
+>> Getting the config from config.env
+>> Creating the schema for the training and test data used in this project
+
+Schema FashionMnist is active.
+
+Version   Version ID   Schema         State    Updated                         Comment   
+1.0.0     1            FashionMnist   active   Thu, 31 Oct 2019 00:39:26 UTC      
+
+Added version 1.0.0 of schema FashionMnist to the registry.
+OK
+>> Creating the topics that will be used for this project
+Created topic FASHION.MNIST.TRAINING
+OK
+Created topic FASHION.MNIST.TEST.ARCHIVE
+OK
+>> Downloading a client certificate
+Certificate successfully written to /root/devnew/es-cert.pem.
+OK
+>> Populating Kafka topics with training and test data
+-->>> Get the schema to use to represent fashion MNIST data
+-->>> Create a Kafka producer
+-->>> Download the training data to be used
+-->>> Sending training data to Kafka topic FASHION.MNIST.TRAINING
+-->>> Sending test data to Kafka topic FASHION.MNIST.TEST.ARCHIVE

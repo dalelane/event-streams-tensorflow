@@ -1,0 +1,16 @@
+------------------------------------------------------------------
+ STEP 1:
+ Using a Kafka topic as a source of training data
+------------------------------------------------------------------
+>> Getting the config from config.env
+>> Train a machine learning model using training data from Kafka
+-->>> Start training a neural net
+Train for 1000 steps
+Epoch 1/4
+1000/1000 [==============================] - 9s 9ms/step - loss: 1.1001 - accuracy: 0.6210
+Epoch 2/4
+1000/1000 [==============================] - 6s 6ms/step - loss: 0.7757 - accuracy: 0.7090
+Epoch 3/4
+1000/1000 [==============================] - 6s 6ms/step - loss: 0.6303 - accuracy: 0.7710
+Epoch 4/4
+1000/1000 [==============================] - 6s 6ms/step - loss: 0.6386 - accuracy: 0.7620
