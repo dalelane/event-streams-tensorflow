@@ -44,6 +44,6 @@ tensorflow-io-nightly==0.9.0.dev2066
 tensorflow-metadata==0.15.0
 termcolor==1.1.0
 tqdm==4.36.1
-urllib3==1.25.6
+urllib3==1.25.8
 Werkzeug==0.16.0
 wrapt==1.11.2
